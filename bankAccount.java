@@ -1,14 +1,14 @@
 import java.util.Scanner;
-
 class bank{
   public String name;
   public int accno;
   public String type;
+  
   public int balance;
   public void input(){
     Scanner sc = new Scanner(System.in);
     System.out.println("Welcome!!");
-    System.out.println("Enter your name: ");
+    System.out.println("Enter your name of employee: ");
     name = sc.nextLine();
     System.out.println("Enter your account number: ");
     accno = sc.nextInt();
@@ -19,17 +19,17 @@ class bank{
   }
   void deposit(int d){
     balance = balance +d;
-
   }
   void withdraw(int w){
     if(w>balance)
+      
     {
       System.out.println("Error!! your balance is insufficient");
     }
     else{
       balance = balance - w;
     }
-
+    
   }
   void display(){
     System.out.println("Name: "+name);
@@ -47,9 +47,10 @@ class bank{
       System.out.println("1: Display");
       System.out.println("2: Deposit ");
       System.out.println("3: Withdraw");
-      System.out.println("4: Quit");
+      System.out.println("4: Quit your org");
       choice = s.nextInt();
       switch(choice){
+          
         case 1:
         b.display();
         break;
