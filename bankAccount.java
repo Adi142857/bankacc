@@ -3,7 +3,6 @@ class bank{
   public String name;
   public int accno;
   public String type;
-  
   public int balance;
   public void input(){
     Scanner sc = new Scanner(System.in);
